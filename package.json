@@ -1,0 +1,42 @@
+{
+  "name": "@wastimy/joi-middleware",
+  "version": "1.0.0",
+  "description": "An express middleware function that wraps the joi validation library. This allows you to use this middleware on route to ensure that all received inputs are correct before any handler function",
+  "main": "dist/validator.js",
+  "types": "dist/validator.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .js,.ts",
+    "test:unit": "NODE_ENV=test node_modules/.bin/jest --passWithNoTests --runInBand",
+    "test": "npm run lint && npm run test:unit"
+  },
+  "keywords": [
+    "joi",
+    "middleware",
+    "joi-middleware",
+    "express"
+  ],
+  "author": "wastimy",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.5",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-typescript": "^7.2.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "jest": "^25.3.0",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.8.3"
+  }
+}
