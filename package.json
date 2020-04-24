@@ -17,6 +17,13 @@
     "express"
   ],
   "author": "wastimy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wastimy/joi-middleware"
+  },
+  "bugs": {
+    "url": "https://github.com/wastimy/joi-middleware/issues"
+  },
   "license": "ISC",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
