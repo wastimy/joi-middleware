@@ -1,5 +1,6 @@
 import { Schema } from '@hapi/joi';
 import { Request, Response, NextFunction } from 'express';
+import ValidatorError from './ValidatorError';
 
 enum ContextKey {
   Body = 'body',
@@ -56,7 +57,7 @@ class JoiMiddleware {
     }
 
     const validation = this.schema.validate(entityToValidate, this.options);
-    if (validation.error) throw validation.error;
+    if (validation.error) throw new ValidatorError('[JoiValidator] Validation error', validation.error);
 
     next();
   };
