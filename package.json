@@ -1,6 +1,6 @@
 {
   "name": "@wastimy/joi-middleware",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "An express middleware function that wraps the joi validation library. This allows you to use this middleware on route to ensure that all received inputs are correct before any handler function",
   "main": "dist/validator.js",
   "types": "dist/validator.d.ts",
